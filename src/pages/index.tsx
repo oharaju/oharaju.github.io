@@ -1,7 +1,11 @@
-import { Button } from '@/components/Button/styles';
+import Header from '@/components/organisms/Header';
+import HomePage from '@/components/templates/HomePage';
 
 export default function Home() {
   return (
-    <Button>Portfólio</Button>
+    <>
+      <Header />
+      <HomePage/>
+    </>
   )
 }
