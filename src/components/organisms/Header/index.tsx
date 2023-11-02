@@ -1,10 +1,12 @@
-import { Container } from './styles';
-import IconsSocialNetwork from '@/components/atoms/IconSocialNetwork';
+import { Container, NavBar } from './styles';
+import Brand from '@/components/atoms/Brand';
 
 export default function Header () {
   return(
     <Container>
-      {/* <IconsSocialNetwork/> */}
+      <NavBar>
+        <Brand />
+      </NavBar>
     </Container>
   )
 }
