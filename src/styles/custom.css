@@ -1,0 +1,9 @@
+html {
+	height: 100vh;
+  font-family: "Effra", "Calibre", "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+body {
+	line-height: 1;
+	background: linear-gradient(#fcd3d3, #fbfafa);
+}
