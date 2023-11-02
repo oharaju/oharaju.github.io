@@ -7,13 +7,3 @@ export const Container = styled.div`
   align-items: center;
   gap: 30px;
 `
-
-export const ContainerImage = styled.div`
-  /* height: 100%;
-  max-height: 300px;
-  overflow: hidden; */
-`
-export const ImageAvatar = styled.img`
-  width: 100%;
-  max-width: 220px;
-`
