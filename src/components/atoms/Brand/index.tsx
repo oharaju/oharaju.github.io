@@ -5,7 +5,7 @@ export default function Brand () {
     <Container>
       <BrandLink href="#">
         <IconLink>&lt; </IconLink>
-        juliaohara
+        oharaju
         <IconLink> /&gt;</IconLink>
       </BrandLink>
     </Container>
