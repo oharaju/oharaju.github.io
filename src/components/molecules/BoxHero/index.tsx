@@ -4,7 +4,7 @@ import IconsSocialNetwork from '@/components/atoms/IconSocialNetwork';
 export default function BoxHero () {
   return(
     <Container>
-      <IconsSocialNetwork/>
+      {/* <IconsSocialNetwork/> */}
     </Container>
   )
 }

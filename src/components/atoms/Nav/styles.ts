@@ -3,11 +3,17 @@ import { ListProps } from './types';
 
 export const Container = styled.nav<ListProps>`
   display: none;
-  transition: all 0.5s;
-  transform: translateY(80%);
+  transition: opacity 300ms ease-in-out, bottom 300ms ease-in-out;
+  opacity: 0;
+  position: relative;
+  bottom: -15px;
+
+  /* transition: all 0.5s;
+  transform: translateY(80%); */
 
   ${({ itsOpen }) => itsOpen && css`
     display: block;
+    opacity: 1;
   `}
 `
 
