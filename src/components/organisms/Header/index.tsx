@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, NavBar } from './styles';
 import Brand from '@/components/atoms/Brand';
 import Hamburger from '@/components/atoms/Hamburger';
+import Nav from '@/components/atoms/Nav';
 
 export default function Header () {
 
@@ -11,10 +12,9 @@ export default function Header () {
     <Container>
       <NavBar>
         <Brand />
-        <div>
-          <Hamburger itsOpen={menuItsOpen} setItsOpen={setMenuItsOpen} />
-        </div>
+        <Hamburger itsOpen={menuItsOpen} setItsOpen={setMenuItsOpen} />
       </NavBar>
+      <Nav itsOpen={menuItsOpen} />
     </Container>
   )
 }

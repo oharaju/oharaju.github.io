@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import { ButtonProps } from './types';
+import media from '@/tokens/media';
 
 const lineDefaultSyles = css`
   width: 35px;
@@ -37,4 +38,8 @@ export const Button = styled.button<ButtonProps>`
       transform: rotate(45deg) translate(-8px, -8px);
     }
   `}
+
+  @media ${media.md} {
+    display: none;
+  }
 `
