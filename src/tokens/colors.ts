@@ -1,9 +1,10 @@
 const colors = {
-  primary: '#4c3e79',
+  primary: '#FBDBDB',
+  secondary: '#c8023f',
   white: '#FFFFFF',
   clear: '#f7f7f7',
   light: '#7E7E7E',
-  neutral: '#cfbcf2',
+  neutral: '#914051',
   relax: '#724BB7',
   stamina: '#222222',
   deep: '#9E9E9E',

@@ -6,4 +6,28 @@ html {
 body {
 	line-height: 1;
 	background: linear-gradient(#fcd3d3, #fbfafa);
+	color: #4b4b4b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	color: #3d4351;
+	line-height: 1.2;
+}
+
+p {
+	font-size: clamp(16px, 1vw, 21px);
+	line-height: 1.5;
+	letter-spacing: 0.02rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	outline: 2px dashed #c8023f;
+	outline-offset: 3px;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	box-shadow: none;
 }
