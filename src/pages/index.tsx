@@ -1,11 +1,16 @@
 import Header from '@/components/organisms/Header';
-import HomePage from '@/components/templates/HomePage';
+import Hero from '@/components/molecules/Hero';
+import locale from '@/locales'
 
 export default function Home() {
+  
+  const { hero } = locale['pt-br']
+  
   return (
     <>
       <Header />
-      <HomePage/>
+      <Hero title={hero.title} description={hero.description} />
+      <Hero {...hero} />
     </>
   )
 }
