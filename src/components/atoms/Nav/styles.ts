@@ -3,10 +3,12 @@ import { ListProps } from './types';
 
 export const Container = styled.nav<ListProps>`
   display: none;
-  transition: opacity 300ms ease-in-out, bottom 300ms ease-in-out;
-  opacity: 0;
-  position: relative;
-  bottom: -15px;
+  position: absolute;
+    left: 0;
+    right: 0;
+  transition: all .75s ease-in-out;
+  z-index: -1;
+  top: 15%;
 
   /* transition: all 0.5s;
   transform: translateY(80%); */

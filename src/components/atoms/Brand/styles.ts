@@ -7,7 +7,6 @@ export const Container = styled.div`
 export const BrandLink = styled.a`
   color: #3d4351;
   font-size: 16px;
-  text-decoration: none;
   font-weight: 500;
 `
 

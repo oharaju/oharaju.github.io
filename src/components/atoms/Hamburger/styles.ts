@@ -23,6 +23,7 @@ export const Button = styled.button<ButtonProps>`
   background-color: transparent;
   border: 0;
   padding: 0;
+  padding-right: 2rem;
   cursor: pointer;
 
   ${({ itsOpen }) => itsOpen && css`
