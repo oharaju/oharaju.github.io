@@ -1,5 +1,5 @@
-import Markdown from 'markdown-to-jsx'
-import { Container, TextSmall, Title, Subtitle, Description, Link } from './styles';
+import Markdown from 'markdown-to-jsx';
+import { Container, TextSmall, Title, Subtitle, Description, Link, Office, Area } from './styles';
 
 export default function Hero ({title, subtitle, description}: any) {
 
@@ -8,8 +8,11 @@ export default function Hero ({title, subtitle, description}: any) {
       <div>
         <TextSmall>Olá, meu nome é</TextSmall>
         <Title>{title}</Title>
-        <Subtitle>{subtitle}</Subtitle>
-        <Markdown options={{ wrapper: Description, overrides: { a: { component: Link } } }}>
+        <Markdown options={{ wrapper: Subtitle, 
+          overrides: { h2: { component: Office }, span: { component: Area }}}}>
+            {subtitle}
+        </Markdown>
+        <Markdown options={{ wrapper: Description, overrides: { a: { component: Link }}}}>
           {description}
         </Markdown>
       </div>

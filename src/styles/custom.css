@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+	color: #4b4b4b;
 	font-size: clamp(16px, 1vw, 21px);
 	line-height: 1.5;
 	letter-spacing: 0.02rem;

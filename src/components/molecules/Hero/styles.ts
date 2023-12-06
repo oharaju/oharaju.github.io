@@ -32,6 +32,8 @@ export const Subtitle = styled.h2`
   font-size: clamp(20px, 6vw, 50px);
   font-weight: 600;
   margin: 1rem 0;
+  display: flex;
+  gap: 10px;
 `
 
 export const Office = styled.h2`
@@ -39,13 +41,19 @@ export const Office = styled.h2`
   font-weight: normal;
 `
 
+export const Area = styled.span`
+  color: ${colors.secondary};
+`
+
 export const Description = styled.p`
-  color: red;
+  color: #4b4b4b;
+  font-size: clamp(16px, 1vw, 21px);
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
 `
 
 export const Link = styled.a`
   color: ${colors.secondary};
   font-weight: 600;
   margin-left: 5px;
-  background: pink;
 `
