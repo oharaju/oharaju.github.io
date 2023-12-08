@@ -1,7 +1,8 @@
 import Markdown from 'markdown-to-jsx';
 import { Container, TextSmall, Title, Subtitle, Description, Link, Office, Area } from './styles';
+import Button from '@/components/atoms/Button/Index';
 
-export default function Hero ({title, subtitle, description}: any) {
+export default function Hero ({title, subtitle, description, children}: any) {
 
   return(
     <Container>
@@ -15,6 +16,7 @@ export default function Hero ({title, subtitle, description}: any) {
         <Markdown options={{ wrapper: Description, overrides: { a: { component: Link }}}}>
           {description}
         </Markdown>
+        <Button>Baixar resumo</Button>
       </div>
     </Container>
   )

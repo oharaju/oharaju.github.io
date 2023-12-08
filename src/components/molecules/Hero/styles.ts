@@ -50,6 +50,7 @@ export const Description = styled.p`
   font-size: clamp(16px, 1vw, 21px);
   line-height: 1.5;
   letter-spacing: 0.02rem;
+  margin-bottom: 5rem;
 `
 
 export const Link = styled.a`

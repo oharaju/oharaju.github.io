@@ -5,7 +5,7 @@ const colors = {
   clear: '#f7f7f7',
   light: '#7E7E7E',
   neutral: '#914051',
-  relax: '#724BB7',
+  relax: '#f8535330',
   stamina: '#222222',
   deep: '#9E9E9E',
   dark: '#191919',
