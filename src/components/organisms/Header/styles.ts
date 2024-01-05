@@ -14,6 +14,9 @@ export const NavBar = styled.div`
   justify-content: space-between;
   height: 5rem;
   padding: 0 12px;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
 `
 
 export const Menu = styled.div`

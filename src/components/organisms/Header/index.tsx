@@ -13,8 +13,10 @@ export default function Header () {
       <NavBar>
         <Brand />
         <Hamburger itsOpen={menuItsOpen} setItsOpen={setMenuItsOpen} />
+
+        <Nav itsOpen={menuItsOpen} />
       </NavBar>
-      <Nav itsOpen={menuItsOpen} />
+      
     </Container>
   )
 }

@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components';
 import { ListProps } from './types';
+import media from '@/tokens/media';
 
 export const Container = styled.nav<ListProps>`
   display: none;
@@ -17,6 +18,14 @@ export const Container = styled.nav<ListProps>`
     display: block;
     opacity: 1;
   `}
+
+  @media ${media.md} {
+    display: block;
+    position: inherit;
+    z-index: 3;
+    letter-spacing: 1.5px;
+  }
+
 `
 
 export const List = styled.ul`
@@ -27,6 +36,13 @@ export const List = styled.ul`
   gap: 16px;
   padding: 5rem 0 3rem;
   margin: 0;
+  font-size: 15px;
+
+  @media ${media.md} {
+    background-color: transparent;
+    flex-direction: row;
+    padding: 0;
+  }
 `
 
 export const Link = styled.a`
