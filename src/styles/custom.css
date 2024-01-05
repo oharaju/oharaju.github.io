@@ -32,3 +32,19 @@ a:hover {
 	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	box-shadow: none;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0 2rem;
+  min-height: 60vh;
+}
+
+@media (min-width: 992px) {
+	section {
+		padding: 0;
+	}
+}

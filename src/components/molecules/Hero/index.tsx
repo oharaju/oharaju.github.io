@@ -1,11 +1,11 @@
 import Markdown from 'markdown-to-jsx';
-import { Container, TextSmall, Title, Subtitle, Description, Link, Office, Area } from './styles';
+import { TextSmall, Title, Subtitle, Description, Link, Office, Area } from './styles';
 import Button from '@/components/atoms/Button/Index';
 
 export default function Hero ({title, subtitle, description, children}: any) {
 
   return(
-    <Container>
+    <section>
       <div>
         <TextSmall>Olá, meu nome é</TextSmall>
         <Title>{title}</Title>
@@ -18,6 +18,6 @@ export default function Hero ({title, subtitle, description, children}: any) {
         </Markdown>
         <Button>Baixar resumo</Button>
       </div>
-    </Container>
+    </section>
   )
 }
