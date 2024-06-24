@@ -9,7 +9,7 @@ export default function Hero ({title, subtitle, description, children}: any) {
       <div>
         <TextSmall>Olá, meu nome é</TextSmall>
         <Title>{title}</Title>
-        <Markdown options={{ wrapper: Subtitle, 
+        <Markdown options={{ wrapper: Subtitle,
           overrides: { h2: { component: Office }, span: { component: Area }}}}>
             {subtitle}
         </Markdown>
