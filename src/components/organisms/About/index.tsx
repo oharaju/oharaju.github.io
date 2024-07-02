@@ -1,6 +1,7 @@
-import { Container, ImagemUser, Content, Title, Description } from  './styles';
+import Markdown from 'markdown-to-jsx';
+import { Container, ImagemUser, Content, TextSmall, Title, Description } from  './styles';
 
-export default function About() {
+export default function About ({title, heading, firstParagraph, secondParagraph}: any) {
   return(
     <section>
       <Container>
@@ -8,13 +9,10 @@ export default function About() {
           <ImagemUser src='./images/photo-julia-ohara.jpeg' alt='Imagem de Júlia Ohara' />
         </Content>
         <div>
-          <Title>Sobre mim</Title>
-          <Description>
-            Sou desenvolvedora Front-end apaixonada por transformar ideias em interfaces digitais funcionais e atrativas. Meu foco é desenvolver aplicações web, sites responsivos e interfaces acessíveis, buscando sempre unir design e usabilidade de forma harmoniosa.
-          </Description>
-          <Description>
-            Acredito que o aprendizado é um processo contínuo e estou dedicando cada vez mais esforços para me aprimorar. Aqui você encontrará exemplos do meu trabalho e do meu compromisso com a criação de soluções digitais que não apenas atendem, mas garantem resultados positivos.
-          </Description>
+          <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall }}}}>{heading}</Markdown>
+          <Markdown options={{ wrapper: Title, overrides: { h3: { component: Title }}}}>{title}</Markdown>
+          <Markdown options={{ wrapper: Description, overrides: { p: { component: Description }}}}>{firstParagraph}</Markdown>
+          <Markdown options={{ wrapper: Description, overrides: { p: { component: Description }}}}>{secondParagraph}</Markdown>
         </div>
       </Container>
     </section>

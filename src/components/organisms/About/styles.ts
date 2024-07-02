@@ -42,12 +42,20 @@ export const ImagemUser = styled.img`
 `
 
 export const Title = styled.h3`
-  color: ${colors.secondary};
+  color: ${colors.gray};
   font-family: 'DM Sans', sans-serif;
-  text-align: center;
-  font-size: 24px;
+  font-size: 2.25rem;
   font-weight: 600;
   margin-bottom: 32px;
+  line-height: 2.5rem;
+`
+
+export const TextSmall= styled.p`
+  color: ${colors.secondary};
+  font-weight: 600;
+  font-size: inherit;
+  letter-spacing: 0.02rem;
+  margin: 1rem 0;
 `
 
 export const Description = styled.p`

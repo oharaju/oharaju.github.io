@@ -6,12 +6,13 @@ import locale from '@/locales';
 export default function Home() {
 
   const { hero } = locale['pt-br'];
+  const { about } = locale['pt-br'];
 
   return (
     <>
       <Header />
       <Hero {...hero} />
-      <About />
+      <About {...about} />
     </>
   )
 }

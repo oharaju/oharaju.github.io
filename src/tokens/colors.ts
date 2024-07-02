@@ -9,6 +9,7 @@ const colors = {
   stamina: '#222222',
   deep: '#9E9E9E',
   dark: '#191919',
+  gray: '#3d4351'
 };
 
 export default colors;
