@@ -18,28 +18,45 @@ export const Section= styled.section`
   min-height: 630px;
 `
 
+export const Content = styled.div`
+  width: 100%;
+`
+
 export const Accordion = styled.button`
   display: block;
-  background-color: ${colors.primary};
+  background-color: transparent;
   color: ${colors.secondary};
   padding: 16px 20px;
   width: 100%;
   border: none;
   outline: none;
   text-align: left;
-  transition: 0.3s;
+  transition: background-color 0.3s;
   font-size: 15px;
   position: relative;
+  cursor: pointer;
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     left: -2px;
     top: 0;
     height: 100%;
-    border-left: 2px solid ${colors.secondary};
+    border-left: 2px solid #dfdfdf;
   }
-`
+
+  &:hover {
+    background-color: ${colors.primary};
+  }
+
+  &.active {
+    background-color: ${colors.primary};
+
+    &::after {
+      border-left: 2px solid ${colors.secondary};
+    }
+  }
+`;
 
 export const Title = styled.h3`
   color: ${colors.gray};

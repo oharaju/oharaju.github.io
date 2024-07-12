@@ -14,18 +14,32 @@ const locale = {
     experience: {
       heading: "<p>Minhas experiências</p>",
       title: "<h3>Experiências</h3>",
+      companies: [
+        {
+          order: 1,
+          name: "DNX Soluções"
+        },
+        {
+          order: 2,
+          name: "Teste 2"
+        }
+      ],
       list: [
         {
-          order: "1",
-          company: "DNX Soluções",
+          order: 1,
           role: "Desenvolvedora Front-end",
           duration: "2022 - Atualmente",
           description: "Desenvolvimento e manutenção de aplicações web, sites responsivos e interfaces acessíveis, utilizando React, Next.js, TypeScript, Styled Components e GraphQL.",
         },
         {
-          order: "2",
-          company: "DNX Soluções",
+          order: 1,
           role: "Estágio Desenvolvedora Front-end",
+          duration: "2021 - 2022",
+          description: "Desenvolvimento e manutenção de aplicações web, sites responsivos e interfaces acessíveis, utilizando React, Next.js, TypeScript, Styled Components e GraphQL.",
+        },
+        {
+          order: 2,
+          role: "teste2",
           duration: "2021 - 2022",
           description: "Desenvolvimento e manutenção de aplicações web, sites responsivos e interfaces acessíveis, utilizando React, Next.js, TypeScript, Styled Components e GraphQL.",
         }
