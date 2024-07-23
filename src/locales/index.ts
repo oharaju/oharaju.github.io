@@ -17,31 +17,16 @@ const locale = {
       companies: [
         {
           order: 1,
-          name: "DNX Soluções"
-        },
-        {
-          order: 2,
-          name: "Teste 2"
-        }
-      ],
-      list: [
-        {
-          order: 1,
-          role: "Desenvolvedora Front-end",
-          duration: "2022 - Atualmente",
-          description: "Desenvolvimento e manutenção de aplicações web, sites responsivos e interfaces acessíveis, utilizando React, Next.js, TypeScript, Styled Components e GraphQL.",
-        },
-        {
-          order: 1,
-          role: "Estágio Desenvolvedora Front-end",
-          duration: "2021 - 2022",
-          description: "Desenvolvimento e manutenção de aplicações web, sites responsivos e interfaces acessíveis, utilizando React, Next.js, TypeScript, Styled Components e GraphQL.",
-        },
-        {
-          order: 2,
-          role: "teste2",
-          duration: "2021 - 2022",
-          description: "Desenvolvimento e manutenção de aplicações web, sites responsivos e interfaces acessíveis, utilizando React, Next.js, TypeScript, Styled Components e GraphQL.",
+          name: "DNX Soluções",
+          office: "Desenvolvedora Front-End",
+          time: "Junho 2022 - Presente",
+          descriptionCompany: "A DNX Soluções é uma empresa dedicada a contribuir para que as empresas alcancem seus objetivos de negócios através da aplicação estratégica da tecnologia. Com uma abordagem integrada que combina análise, estratégia, design e tecnologia, a DNX oferece uma gama de serviços, incluindo o desenvolvimento de sites, aplicativos e sistemas web personalizados.",
+          labels: "Um resumo sobre minhas responsabilidades na empresa:",
+          firstDescription: "Utilização das tecnologias HTML, CSS, Bootstrap, JavaScript, JQuery para criar interfaces modernas e funcionais.",
+          secondDescription: "Desenvolvimento de interfaces responsivas, seguindo o conceito Mobile First.",
+          thirdDescription: "Desenvolvimento de interfaces responsivas, seguindo o conceito Mobile First.",
+          fourthDescription: "Colaboração estreita com designers e desenvolvedores back-end para garantir a integração eficiente de todos os componentes dos projetos.",
+          fifthDescription: "Criação de interfaces web interativas e amigáveis para o usuário, focando na experiência do usuário e na usabilidade.",
         }
       ]
     }
