@@ -3,23 +3,33 @@ import media from '@/tokens/media';
 import colors from '@/tokens/colors';
 
 export const Container = styled.div`
-
-  @media ${media.md} {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-  }
-`
-export const Section= styled.section`
-  display: flex;
-  align-items: flex-start;
-  padding: 0 2rem;
-  height: 100%;
-  min-height: 630px;
+  margin-top: 7rem;
 `
 
 export const Content = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+`
+
+export const ContainerAccordion = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+
+  @media ${media.md} {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media ${media.lg} {
+    gap: 2rem;
+  }
 `
 
 export const Accordion = styled.button`
@@ -28,6 +38,8 @@ export const Accordion = styled.button`
   color: ${colors.secondary};
   padding: 16px 20px;
   width: 100%;
+  min-width: 200px;
+  max-width: 200px;
   border: none;
   outline: none;
   text-align: left;
@@ -58,6 +70,65 @@ export const Accordion = styled.button`
   }
 `;
 
+export const Box = styled.div`
+  color: #4b4b4b;
+  display: none;
+  font-size: clamp(16px, 1vw, 18px);
+  line-height: 30px;
+  letter-spacing: 0.02rem;
+  /* margin-bottom: 2rem; */
+  text-align: justify;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+
+  &.active{
+    display: block;
+  }
+
+  @media ${media.md} {
+    min-width: 544px;
+  }
+
+  @media ${media.lg} {
+    min-width: 700px;
+    max-height: 580px;
+    min-height: 580px;
+  }
+`
+
+export const Office = styled.h4`
+  color: ${colors.gray};
+  font-size: 22px;
+  margin-bottom: 0.1rem;
+`
+
+export const SubHeading = styled.p`
+  color: #4b4b4b;
+  font-size: .875em;
+  margin-bottom: 1rem;
+`
+
+export const Description = styled.p`
+  color: ${colors.gray};
+  font-size: clamp(16px, 1vw, 18px);
+  line-height: 30px;
+  letter-spacing: 0.02rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  width: 100%;
+  max-width: 700px;
+`
+
+export const LabelDefault = styled.p`
+  margin-bottom: 1rem;
+`
+
+export const ListDescription = styled.li`
+  list-style: disc;
+  margin-bottom: 1rem;
+`
+
 export const Title = styled.h3`
   color: ${colors.gray};
   font-family: 'DM Sans', sans-serif;
@@ -73,15 +144,4 @@ export const TextSmall= styled.p`
   font-size: inherit;
   letter-spacing: 0.02rem;
   margin: 1rem 0;
-`
-
-export const Description = styled.p`
-  color: #4b4b4b;
-  font-size: clamp(16px, 1vw, 18px);
-  line-height: 30px;
-  letter-spacing: 0.02rem;
-  margin-bottom: 2rem;
-  text-align: justify;
-  width: 100%;
-  max-width: 700px;
 `
