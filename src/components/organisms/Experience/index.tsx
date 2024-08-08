@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Markdown from 'markdown-to-jsx';
-import { Container, TextSmall, Title, ContainerAccordion, Accordion, Box, Office, SubHeading, Description, LabelDefault, ListDescription, Content } from  './styles';
+import { Container, TextSmall, Title, ContainerAccordion, Accordion, Box, Office, SubHeading, Description, LabelDefault, ListDescription, DescriptionList, Content } from  './styles';
 
 export default function Experience ({heading, title, companies}: any) {
 
@@ -19,13 +19,13 @@ export default function Experience ({heading, title, companies}: any) {
       <Description>{company.descriptionCompany}</Description>
       <LabelDefault>{company.labels}</LabelDefault>
       {company.firstDescription &&
-        <ul>
-          <ListDescription>{company.firstDescription}</ListDescription>
-          <ListDescription>{company.secondDescription}</ListDescription>
-          <ListDescription>{company.thirdDescription}</ListDescription>
-          <ListDescription>{company.fourthDescription}</ListDescription>
-          <ListDescription>{company.fifthDescription}</ListDescription>
-        </ul>
+        <ListDescription>
+          <DescriptionList>{company.firstDescription}</DescriptionList>
+          <DescriptionList>{company.secondDescription}</DescriptionList>
+          <DescriptionList>{company.thirdDescription}</DescriptionList>
+          <DescriptionList>{company.fourthDescription}</DescriptionList>
+          <DescriptionList>{company.fifthDescription}</DescriptionList>
+        </ListDescription>
       }
     </Box>
   ))

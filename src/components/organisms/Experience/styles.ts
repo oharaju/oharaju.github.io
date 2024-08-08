@@ -24,7 +24,7 @@ export const ContainerAccordion = styled.div`
 
   @media ${media.md} {
     flex-direction: row;
-    gap: 0;
+    gap: 1rem;
   }
 
   @media ${media.lg} {
@@ -76,7 +76,6 @@ export const Box = styled.div`
   font-size: clamp(16px, 1vw, 18px);
   line-height: 30px;
   letter-spacing: 0.02rem;
-  /* margin-bottom: 2rem; */
   text-align: justify;
   width: 100%;
   max-width: 700px;
@@ -124,7 +123,11 @@ export const LabelDefault = styled.p`
   margin-bottom: 1rem;
 `
 
-export const ListDescription = styled.li`
+export const ListDescription = styled.ul`
+  padding: 0 1.5rem;
+`
+
+export const DescriptionList = styled.li`
   list-style: disc;
   margin-bottom: 1rem;
 `
