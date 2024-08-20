@@ -28,8 +28,75 @@ const locale = {
           fifthDescription: "Criação de interfaces web interativas e amigáveis para o usuário, focando na experiência do usuário e na usabilidade.",
         }
       ]
+    },
+    technology: {
+      heading: "<p>Minhas experiências</p>",
+      title: "<h3>Habilidades</h3>",
+      description: "Aqui estão algumas tecnologias que eu possuo contato.",
+      technologies: [
+        {
+          name: "HTML5",
+          icon: "./images/icon-html-5.svg",
+        },
+        {
+          name: "CSS3",
+          icon: "./images/icon-css.svg",
+        },
+        {
+          name: "JavaSCript",
+          icon: "./images/icon-js.svg",
+        },
+        {
+          name: "React",
+          icon: "./images/icon-react.svg",
+        },
+        {
+          name: "Next.js",
+          icon: "./images/icon-next-js.svg",
+        },
+        {
+          name: "SASS",
+          icon: "./images/icon-sass.svg",
+        },
+        {
+          name: "Prettier e ESlint",
+          icon: "./images/icon-prettier.svg",
+        },
+        {
+          name: "CSS-in-JS",
+          icon: "./images/icon-styled-component.svg",
+        },
+        {
+          name: "Práticas de SEO",
+          icon: "./images/icon-seo.svg",
+        },
+        {
+          name: "jQuery",
+          icon: "./images/icon-jquery.svg",
+        },
+        {
+          name: "Bootstrap",
+          icon: "./images/icon-bootstrap.svg",
+        },
+        {
+          name: "Git",
+          icon: "./images/icon-git.png",
+        },
+        {
+          name: "Storybook",
+          icon: "./images/icon-storybook.svg",
+        },
+        {
+          name: "Figma",
+          icon: "./images/icon-figma.svg",
+        },
+      ]
     }
   }
 }
+
+// technologies: [
+//   'HTML 5', 'React', 'Styled Components', 'Next.js', 'Teste de Snapshot', 'Prettier e ESlint', 'Metodologia CSS BEM,', 'Mobile First', 'Controle de versionamento (Git/GitHub)', 'Bootstrap', 'Jquery', 'Metodologias Ágeis (Scrum/Kanban)', 'Práticas de SEO'
+//   ]
 
 export default locale;
