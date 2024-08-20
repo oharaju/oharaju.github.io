@@ -22,7 +22,6 @@ export default function Experience ({heading, title, companies}: any) {
         <ListDescription>
           <DescriptionList>{company.firstDescription}</DescriptionList>
           <DescriptionList>{company.secondDescription}</DescriptionList>
-          <DescriptionList>{company.thirdDescription}</DescriptionList>
           <DescriptionList>{company.fourthDescription}</DescriptionList>
           <DescriptionList>{company.fifthDescription}</DescriptionList>
         </ListDescription>
