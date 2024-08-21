@@ -32,7 +32,7 @@ const locale = {
     technology: {
       heading: "<p>Minhas experiências</p>",
       title: "<h3>Habilidades</h3>",
-      description: "Aqui estão algumas tecnologias que eu possuo contato.",
+      description: "Aqui estão algumas tecnologias que possuo contato.",
       technologies: [
         {
           name: "HTML5",
@@ -63,7 +63,7 @@ const locale = {
           icon: "./images/icon-prettier.svg",
         },
         {
-          name: "CSS-in-JS",
+          name: "Styled Component",
           icon: "./images/icon-styled-component.svg",
         },
         {

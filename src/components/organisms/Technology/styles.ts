@@ -11,8 +11,15 @@ export const Section = styled.section`
 `
 
 export const Container = styled.div`
-  margin-top: 7rem;
+  margin: 7rem 0;
   width: 100%;
+`
+
+export const Box = styled.div`
+
+  @media ${media.xxl} {
+    padding: 0 14rem;
+  }
 `
 
 export const Title = styled.h3`
@@ -44,10 +51,6 @@ grid-column-gap: 1rem;
 grid-row-gap: 1rem;
 margin-top: 2rem;
 grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-
-  @media ${media.xl} {
-    padding: 0 29rem;
-  }
 `
 
 export const Card = styled.div`
@@ -58,6 +61,12 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0px 11px rgb(0 0 0 / 6%);
+  }
 `
 
 export const Icon = styled.img`
@@ -65,5 +74,5 @@ export const Icon = styled.img`
   max-width: 40px;
   height: 100%;
   max-height: 40px;
-  margin-top: 10px;
+  margin-top: 1rem;
 `

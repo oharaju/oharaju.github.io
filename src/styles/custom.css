@@ -43,8 +43,8 @@ section {
 	min-height: 660px;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
 	section {
 		padding: 0;
 	}
-}
+} */
