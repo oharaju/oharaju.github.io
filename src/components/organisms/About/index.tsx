@@ -6,7 +6,7 @@ export default function About ({title, heading, firstParagraph, secondParagraph}
     <section>
       <Container>
         <Content>
-          <ImagemUser src='./images/photo-julia-ohara.jpeg' alt='Imagem de Júlia Ohara' />
+          <ImagemUser src='./images/photo-julia-ohara.jpeg' alt='Imagem de Júlia Ohara' loading='lazy' />
         </Content>
         <div>
           <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall }}}}>{heading}</Markdown>
