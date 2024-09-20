@@ -22,7 +22,7 @@ const locale = {
           time: "Junho 2022 - Presente",
           descriptionCompany: "A DNX Soluções é uma empresa dedicada a contribuir para que as empresas alcancem seus objetivos de negócios através da aplicação estratégica da tecnologia. Com uma abordagem integrada que combina análise, estratégia, design e tecnologia, a DNX oferece uma gama de serviços, incluindo o desenvolvimento de sites, aplicativos e sistemas web personalizados.",
           labels: "Um resumo sobre minhas responsabilidades na empresa:",
-          firstDescription: "Utilização das tecnologias HTML, CSS, SASS, Bootstrap, JavaScript, JQuery para criar interfaces modernas e funcionais.",
+          firstDescription: "Utilização das tecnologias HTML, CSS, SASS, Bootstrap, JavaScript, jQuery para criar interfaces modernas e funcionais.",
           secondDescription: "Desenvolvimento de interfaces responsivas, seguindo o conceito Mobile First.",
           fourthDescription: "Colaboração estreita com designers e desenvolvedores back-end para garantir a integração eficiente de todos os componentes dos projetos.",
           fifthDescription: "Criação de interfaces web interativas e amigáveis para o usuário, focando na experiência do usuário e na usabilidade.",

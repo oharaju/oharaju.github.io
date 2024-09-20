@@ -48,8 +48,8 @@ export const TextSmall= styled.p`
 
 export const Description = styled.h4`
   color: ${colors.gray};
-  font-size: clamp(16px, 1vw, 21px);
-  margin-bottom: 0.1rem;
+  font-size: clamp(16px, 1vw, 19px);
+  letter-spacing: 0.02rem;
 `
 
 export const ContainerCard = styled.div`

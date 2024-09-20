@@ -119,10 +119,6 @@ export const Description = styled.p`
   max-width: 700px;
 `
 
-export const LabelDefault = styled.p`
-  margin-bottom: 1rem;
-`
-
 export const ListDescription = styled.ul`
   padding: 0 1.5rem;
 `
