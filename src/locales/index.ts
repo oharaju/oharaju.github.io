@@ -43,7 +43,7 @@ const locale = {
           icon: "./images/icon-css.svg",
         },
         {
-          name: "JavaSCript",
+          name: "JavaScript",
           icon: "./images/icon-js.svg",
         },
         {
@@ -94,9 +94,5 @@ const locale = {
     }
   }
 }
-
-// technologies: [
-//   'HTML 5', 'React', 'Styled Components', 'Next.js', 'Teste de Snapshot', 'Prettier e ESlint', 'Metodologia CSS BEM,', 'Mobile First', 'Controle de versionamento (Git/GitHub)', 'Bootstrap', 'Jquery', 'Metodologias Ágeis (Scrum/Kanban)', 'Práticas de SEO'
-//   ]
 
 export default locale;

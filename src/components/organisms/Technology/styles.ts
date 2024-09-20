@@ -12,13 +12,20 @@ export const Section = styled.section`
 
 export const Container = styled.div`
   margin: 7rem 0;
-  width: 100%;
 `
 
 export const Box = styled.div`
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
 
-  @media ${media.xxl} {
-    padding: 0 14rem;
+  @media ${media.md} {
+    min-width: 600px;
+  }
+
+  @media ${media.xl} {
+    min-width: 1098px;
   }
 `
 
