@@ -34,7 +34,7 @@ export const ImagemUser = styled.img`
   margin-bottom: 2rem;
   border-radius: 1rem;
   animation: ${rotate} 6s ease-in-out 1s infinite;
-  animation-delay: 2s;
+  animation-delay: -2s;
 
   @media ${media.md} {
     margin-bottom: 0;
