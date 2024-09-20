@@ -20,8 +20,12 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
 
+  @media ${media.sm} {
+    min-width: 520px;
+  }
+
   @media ${media.md} {
-    min-width: 600px;
+    min-width: 730px;
   }
 
   @media ${media.xl} {
