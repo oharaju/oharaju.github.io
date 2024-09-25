@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import colors from '@/tokens/colors';
 
 export const TextSmall = styled.p`
@@ -26,12 +26,33 @@ export const Office = styled.h2`
   font-weight: normal;
 `
 
+const cursor = keyframes`
+  50% {
+    border-color: transparent;
+  }
+`
+
+const typing = keyframes`
+  from { width: 0 }
+`
+
 export const Area = styled.span`
   color: ${colors.secondary};
+  border-right: 2px solid #b4abab;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    ${typing} 4s steps(18),
+    ${cursor} .4s step-end infinite alternate;
+`
+
+export const Box = styled.div`
+  display: inline-block;
 `
 
 export const Description = styled.p`
-  color: #4b4b4b;
+  color: ${colors.clearText};
   font-size: clamp(16px, 1vw, 21px);
   line-height: 1.5;
   letter-spacing: 0.02rem;
