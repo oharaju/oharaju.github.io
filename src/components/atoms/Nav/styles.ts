@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components';
 import { ListProps } from './types';
 import media from '@/tokens/media';
+import colors from '@/tokens/colors';
 
 export const Container = styled.nav<ListProps>`
   display: none;
@@ -46,7 +47,7 @@ export const List = styled.ul`
 `
 
 export const Link = styled.a`
-  color: #4b4b4b;
+  color: ${colors.clearText};
   text-decoration: none;
 
   &:hover {

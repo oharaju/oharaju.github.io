@@ -59,7 +59,7 @@ export const TextSmall= styled.p`
 `
 
 export const Description = styled.p`
-  color: #4b4b4b;
+  color: ${colors.clearText};
   font-size: clamp(16px, 1vw, 18px);
   line-height: 30px;
   letter-spacing: 0.02rem;

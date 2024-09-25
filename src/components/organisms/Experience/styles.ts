@@ -71,7 +71,7 @@ export const Accordion = styled.button`
 `;
 
 export const Box = styled.div`
-  color: #4b4b4b;
+  color: ${colors.clearText};
   display: none;
   font-size: clamp(16px, 1vw, 18px);
   line-height: 30px;
@@ -103,7 +103,7 @@ export const Office = styled.h4`
 `
 
 export const SubHeading = styled.p`
-  color: #4b4b4b;
+  color: ${colors.clearText};
   font-size: .875em;
   margin-bottom: 1rem;
 `
