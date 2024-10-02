@@ -17,7 +17,9 @@ export default function Hero ({title, role, description, children}: any) {
         <Markdown options={{ wrapper: Description, overrides: { a: { component: Link }}}}>
           {description}
         </Markdown>
-        <Button>Baixar resumo</Button>
+        <Button href='./cv_julia_ohara_front_end.pdf' target="_blank">
+          Baixar resumo
+        </Button>
       </div>
     </section>
   )

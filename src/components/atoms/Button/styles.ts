@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import colors from "@/tokens/colors";
 
-export const ButtonStyles = styled.button`
+export const ButtonStyles = styled.a`
   border-color: ${colors.secondary};
   background-color: transparent;
   padding: 1rem 2rem;
