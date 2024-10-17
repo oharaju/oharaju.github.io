@@ -1,5 +1,6 @@
 import Markdown from 'markdown-to-jsx';
 import { Section, Box, Container, Title, TextSmall, Description, ContainerCard, Card, Icon }  from './styles';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Technology ({ heading, title, description, technologies } : any ) {
 
@@ -13,17 +14,19 @@ export default function Technology ({ heading, title, description, technologies 
   ))
 
   return(
-    <section>
-      <Container>
-        <Box>
-            <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall }}}}>{heading}</Markdown>
-            <Markdown options={{ wrapper: Title, overrides: { h3: { component: Title }}}}>{title}</Markdown>
-            <Description>{description}</Description>
-            <ContainerCard>
-              {cardsTechnologies}
-            </ContainerCard>
-        </Box>
-      </Container>
-    </section>
+    <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+      <section>
+        <Container>
+          <Box>
+              <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall }}}}>{heading}</Markdown>
+              <Markdown options={{ wrapper: Title, overrides: { h3: { component: Title }}}}>{title}</Markdown>
+              <Description>{description}</Description>
+              <ContainerCard>
+                {cardsTechnologies}
+              </ContainerCard>
+          </Box>
+        </Container>
+      </section>
+    </ScrollAnimation>
   )
 }

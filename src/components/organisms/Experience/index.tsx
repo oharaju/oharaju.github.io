@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Markdown from 'markdown-to-jsx';
 import { Container, TextSmall, Title, ContainerAccordion, Accordion, Box, Office, SubHeading, Description, ListDescription, DescriptionList, Content } from  './styles';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Experience ({heading, title, companies}: any) {
 
@@ -34,21 +35,23 @@ export default function Experience ({heading, title, companies}: any) {
   };
 
   return(
-    <section>
-      <Container>
-        <div>
-          <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall }}}}>{heading}</Markdown>
-          <Markdown options={{ wrapper: Title, overrides: { h3: { component: Title }}}}>{title}</Markdown>
-        </div>
-        <ContainerAccordion>
-          <Content>
-              {companyAccordion}
-          </Content>
+    <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+      <section>
+        <Container>
           <div>
-            {companyDescription}
+            <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall }}}}>{heading}</Markdown>
+            <Markdown options={{ wrapper: Title, overrides: { h3: { component: Title }}}}>{title}</Markdown>
           </div>
-        </ContainerAccordion>
-      </Container>
-    </section>
+          <ContainerAccordion>
+            <Content>
+                {companyAccordion}
+            </Content>
+            <div>
+              {companyDescription}
+            </div>
+          </ContainerAccordion>
+        </Container>
+      </section>
+    </ScrollAnimation>
   )
 }
