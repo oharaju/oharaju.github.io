@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 export default function About ({title, heading, firstParagraph, secondParagraph}: any) {
   return(
     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-      <section>
+      <section id="sobre">
           <Container>
             <Content>
               <ImagemUser src='./images/photo-julia-ohara.jpeg' alt='Imagem de Júlia Ohara' loading='lazy' />

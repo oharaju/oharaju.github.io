@@ -35,7 +35,7 @@ export const List = styled.ul`
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  padding: 5rem 0 3rem;
+  padding: 3rem 0;
   margin: 0;
   font-size: 15px;
 

@@ -36,7 +36,7 @@ export default function Experience ({heading, title, companies}: any) {
 
   return(
     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-      <section>
+      <section id="experiencias">
         <Container>
           <div>
             <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall }}}}>{heading}</Markdown>

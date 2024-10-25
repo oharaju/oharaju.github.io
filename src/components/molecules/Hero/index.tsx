@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 export default function Hero ({title, role, description, children}: any) {
   return(
     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-      <section>
+      <section id="home">
         <div>
           <TextSmall>Olá, meu nome é</TextSmall>
           <Title>{title}</Title>
