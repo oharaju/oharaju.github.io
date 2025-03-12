@@ -5,6 +5,7 @@ import Experience from '@/components/organisms/Experience';
 import Technology from '@/components/organisms/Technology';
 
 import locale from '@/locales';
+import Contact from '@/components/organisms/Contact';
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
       <About {...about} />
       <Experience {...experience} />
       <Technology {...technology} />
+      {/* <Contact {...contact} /> */}
     </>
   )
 }

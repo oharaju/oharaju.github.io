@@ -42,7 +42,7 @@ export const Title = styled.h3`
   line-height: 2.5rem;
 `
 
-export const TextSmall= styled.p`
+export const TextSmall = styled.p`
   color: ${colors.secondary};
   font-weight: 600;
   font-size: inherit;

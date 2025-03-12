@@ -91,6 +91,29 @@ const locale = {
           icon: "./images/icon-figma.svg",
         },
       ]
+    },
+    contact: {
+      heading: "<p>Contato</p>",
+      title: "<h3>Contatos</h3>",
+      description: "Fique à vontade para entrar em contato através dos canais abaixo.",
+      contacts: [
+        {
+          name: "Whatsapp",
+          icon: "./images/icon-phone.svg",
+        },
+        {
+          name: "E-mail",
+          icon: "./images/icon-email.svg",
+        },
+        {
+          name: "Linkedin",
+          icon: "./images/icon-linkedin.svg",
+        },
+        {
+          name: "GitHub",
+          icon: "./images/icon-github.svg",
+        },
+      ]
     }
   }
 }
