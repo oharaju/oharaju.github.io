@@ -14,4 +14,12 @@ const device = {
   xxl: `(min-width: ${size.xxl})`,
 };
 
-export default device;
+const maxDevice = {
+  sm: `(max-width: ${size.sm})`,
+  md: `(max-width: ${size.md})`,
+  lg: `(max-width: ${size.lg})`,
+  xl: `(max-width: ${size.xl})`,
+  xxl: `(max-width: ${size.xxl})`,
+};
+
+export { device, maxDevice };

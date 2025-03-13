@@ -1,6 +1,6 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { ButtonProps } from './types';
-import media from '@/tokens/media';
+import { device, maxDevice } from '@/tokens/media';
 
 const lineDefaultSyles = css`
   width: 35px;
@@ -40,7 +40,7 @@ export const Button = styled.button<ButtonProps>`
     }
   `}
 
-  @media ${media.md} {
+  @media ${device.md} {
     display: none;
   }
 `

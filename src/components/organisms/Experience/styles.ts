@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import media from '@/tokens/media';
-import colors from '@/tokens/colors';
+import { device, maxDevice } from '@/tokens/media'; import colors from '@/tokens/colors';
 
 export const Container = styled.div`
   margin-top: 7rem;
@@ -22,12 +21,12 @@ export const ContainerAccordion = styled.div`
   gap: 2rem;
   align-items: flex-start;
 
-  @media ${media.md} {
+  @media ${device.md} {
     flex-direction: row;
     gap: 1rem;
   }
 
-  @media ${media.lg} {
+  @media ${device.lg} {
     gap: 2rem;
   }
 `
@@ -85,11 +84,11 @@ export const Box = styled.div`
     display: block;
   }
 
-  @media ${media.md} {
+  @media ${device.md} {
     min-width: 544px;
   }
 
-  @media ${media.lg} {
+  @media ${device.lg} {
     min-width: 700px;
     max-height: 580px;
     min-height: 580px;
@@ -137,7 +136,7 @@ export const Title = styled.h3`
   line-height: 2.5rem;
 `
 
-export const TextSmall= styled.p`
+export const TextSmall = styled.p`
   color: ${colors.secondary};
   font-weight: 600;
   font-size: inherit;

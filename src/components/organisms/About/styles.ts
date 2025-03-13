@@ -1,10 +1,9 @@
 import styled, { keyframes } from 'styled-components';
-import media from '@/tokens/media';
-import colors from '@/tokens/colors';
+import { device, maxDevice } from '@/tokens/media'; import colors from '@/tokens/colors';
 
 export const Container = styled.div`
 
-  @media ${media.md} {
+  @media ${device.md} {
     display: flex;
     align-items: center;
     gap: 3rem;
@@ -36,7 +35,7 @@ export const ImagemUser = styled.img`
   animation: ${rotate} 6s ease-in-out 1s infinite;
   animation-delay: -2s;
 
-  @media ${media.md} {
+  @media ${device.md} {
     margin-bottom: 0;
   }
 `
@@ -50,7 +49,7 @@ export const Title = styled.h3`
   line-height: 2.5rem;
 `
 
-export const TextSmall= styled.p`
+export const TextSmall = styled.p`
   color: ${colors.secondary};
   font-weight: 600;
   font-size: inherit;

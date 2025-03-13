@@ -1,6 +1,6 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ListProps } from './types';
-import media from '@/tokens/media';
+import { device, maxDevice } from '@/tokens/media';
 import colors from '@/tokens/colors';
 
 export const Container = styled.nav<ListProps>`
@@ -20,7 +20,7 @@ export const Container = styled.nav<ListProps>`
     opacity: 1;
   `}
 
-  @media ${media.md} {
+  @media ${device.md} {
     display: block;
     position: inherit;
     z-index: 3;
@@ -39,7 +39,7 @@ export const List = styled.ul`
   margin: 0;
   font-size: 15px;
 
-  @media ${media.md} {
+  @media ${device.md} {
     background-color: transparent;
     flex-direction: row;
     padding: 0;

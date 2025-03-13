@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import colors from '@/tokens/colors';
-import media from '@/tokens/media';
-
+import { device, maxDevice } from '@/tokens/media';
 export const Section = styled.section`
   padding: 0;
 
-  @media ${media.md} {
+  @media ${device.md} {
     padding: 0 5rem;
   }
 `
@@ -20,15 +19,15 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media ${media.sm} {
+  @media ${device.sm} {
     min-width: 520px;
   }
 
-  @media ${media.md} {
+  @media ${device.md} {
     min-width: 730px;
   }
 
-  @media ${media.xl} {
+  @media ${device.xl} {
     min-width: 1098px;
   }
 `
