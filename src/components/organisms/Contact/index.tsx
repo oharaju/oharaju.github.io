@@ -1,17 +1,19 @@
 import Markdown from 'markdown-to-jsx';
-import { Box, Container, Title, TextSmall, Description, Card, Icon } from './styles';
+import { Container, Box, Title, TextSmall, Description, SocialLinks, Link, Roudend, Icon, BoxContact } from './styles';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Contact({ heading, title, description, contacts }: any) {
 
   const cardsTechnologies = contacts.map((contact: any, index: number) => (
-    <div>
-      <Card key={index}>
-        {contact.name}
-        <Icon src={contact.icon} />
-      </Card>
-    </div>
-  ))
+    <Link href={contact.address} target="_blank" key={index}>
+      <Roudend>
+        <Icon src={contact.icon} alt={contact.name} />
+      </Roudend>
+      <BoxContact>
+        <p>{contact.name}</p>
+      </BoxContact>
+    </Link>
+  ));
 
   return (
     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
@@ -21,9 +23,9 @@ export default function Contact({ heading, title, description, contacts }: any) 
             <Markdown options={{ wrapper: TextSmall, overrides: { p: { component: TextSmall } } }}>{heading}</Markdown>
             <Markdown options={{ wrapper: Title, overrides: { h3: { component: Title } } }}>{title}</Markdown>
             <Description>{description}</Description>
-            <div>
+            <SocialLinks>
               {cardsTechnologies}
-            </div>
+            </SocialLinks>
           </Box>
         </Container>
       </section>

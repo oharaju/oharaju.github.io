@@ -9,7 +9,7 @@ import Contact from '@/components/organisms/Contact';
 
 export default function Home() {
 
-  const { hero, about, experience, technology } = locale['pt-br'];
+  const { hero, about, experience, technology, contact } = locale['pt-br'];
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function Home() {
       <About {...about} />
       <Experience {...experience} />
       <Technology {...technology} />
-      {/* <Contact {...contact} /> */}
+      <Contact {...contact} />
     </>
   )
 }
