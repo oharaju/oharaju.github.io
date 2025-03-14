@@ -98,20 +98,24 @@ const locale = {
       description: "Fique à vontade para entrar em contato através dos canais abaixo.",
       contacts: [
         {
-          name: "Whatsapp",
-          icon: "./images/icon-phone.svg",
-        },
-        {
           name: "E-mail",
           icon: "./images/icon-email.svg",
-        },
-        {
-          name: "Linkedin",
-          icon: "./images/icon-linkedin.svg",
+          address: "mailto:juliaohara.br@gmail.com"
         },
         {
           name: "GitHub",
           icon: "./images/icon-github.svg",
+          address: "https://github.com/oharaju"
+        },
+        {
+          name: "Linkedin",
+          icon: "./images/icon-linkedin.svg",
+          address: "https://www.linkedin.com/in/juliaoharabr/"
+        },
+        {
+          name: "Whatsapp",
+          icon: "./images/icon-phone.svg",
+          address: "https://wa.me/5511977725816"
         },
       ]
     }
